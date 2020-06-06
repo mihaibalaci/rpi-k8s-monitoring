@@ -3,7 +3,7 @@
   modules: [
     {
       name: 'armExporter',
-      enabled: false,
+      enabled: true,
       file: import 'arm_exporter.jsonnet',
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       name: 'traefikExporter',
-      enabled: false,
+      enabled: true,
       file: import 'traefik.jsonnet',
     },
     {
@@ -35,10 +35,10 @@
   },
 
   // Domain suffix for the ingresses
-  suffixDomain: '192.168.99.100.nip.io',
+  suffixDomain: '172.16.20.10.balaci.xyz',
 
   // Grafana "from" email
   grafana: {
-    from_address: 'myemail@gmail.com',
+    from_address: 'mihai.balaci@gmail.com',
   },
 }
